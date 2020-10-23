@@ -1,0 +1,41 @@
+@import "./function";
+@import "./color";
+
+#our-service-plan {
+  .content {
+      border-bottom: 1px solid $blue-color;
+      border-top: 1px solid $blue-color;
+    .gray-color {
+      color: $black-gray-color;
+      display: block;
+      margin: 10px auto;
+    }
+    .price,
+    .view-plan,
+    .view-plan i {
+      color: $blue-color;
+    }
+    .price {
+      font-size: 35px;
+      font-weight: bolder;
+    }
+    .view-plan {
+      display: block;
+      margin: 10px auto;
+    }
+
+    ul {
+      margin-bottom: 20px;
+    }
+    ul li {
+      color: $black-gray-color;
+    }
+  }
+}
+
+#next {
+    h4{
+        color: $black-gray-color;
+        opacity: 0.5;
+    }
+}

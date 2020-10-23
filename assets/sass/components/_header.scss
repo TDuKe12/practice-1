@@ -1,0 +1,71 @@
+@import "./function";
+@import "./color";
+
+.gray-bg {
+  background-color: #e5e5e5;
+}
+.intro-btn {
+  @include gradientBG(#ffa060, #ffbe82);
+  @include boxShadow(#ffa060);
+  width: 200px;
+}
+i.arrow {
+  margin: 0 0 0 15px;
+  color: #fff;
+  font-size: 14px;
+}
+
+#header {
+  .navbar {
+    .signUpBtn {
+      @include gradientBG(#2186df, #4ac4ff);
+      height: 40px;
+      width: 150px;
+      border: none;
+      @include boxShadow(#2186df);
+    }
+    .navbar-nav {
+      .nav-item {
+        a {
+          color: $black-gray-color;
+        }
+      }
+    }
+  }
+}
+
+#intro {
+  .intro-section {
+    @media (min-width: 576px) {
+      width: 100% !important;
+    }
+    @media (min-width: 768px) {
+      width: 50% !important;
+    }
+    .color-black,
+    .intro-head {
+      color: $black-color;
+    }
+    .intro-head {
+      margin: 4rem 0;
+    }
+    .intro-p {
+      color: $black-gray-color;
+      margin-bottom: 40px;
+    }
+    .intro-btn {
+      @include gradientBG(#ffa060, #ffbe82);
+      width: 200px;
+    }
+    .caret-icon {
+      margin-right: 15px;
+      background-color: #fff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      color: #2186df;
+    }
+  }
+}

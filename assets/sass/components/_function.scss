@@ -1,0 +1,9 @@
+// Liner-gradient Function
+@mixin gradientBG($color1, $color2) {
+  background-image: linear-gradient(to left, $color1, $color2) !important;
+}
+
+// Box-Shadow function
+@mixin boxShadow($color) {
+  box-shadow: 0 0 20px $color;
+}

@@ -1,0 +1,53 @@
+@import "./function";
+@import "./color";
+.header-icon i {
+  @include gradientBG(#2186df, #4ac4ff);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+p {
+  color: $black-gray-color;
+}
+#our-services {
+  .services {
+    .row {
+      height: 160px;
+    }
+
+    .orange-row,
+    .purple-row {
+      @media (min-width: 576px) {
+        width: 100%;
+      }
+      @media (min-width: 768px) {
+        width: 90%;
+      }
+    }
+    .orange-circle,
+    .green-circle,
+    .purple-circle {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      border-radius: 50%;
+      text-align: center;
+    }
+    .orange-circle {
+      background-color: $orange-color;
+    }
+    .green-circle {
+      background-color: $green-color;
+    }
+    .purple-circle {
+      background-color: $purple-color;
+    }
+  }
+}
